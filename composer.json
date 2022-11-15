@@ -1,0 +1,33 @@
+{
+  "name": "faudit/fauditapi",
+  "type": "library",
+  "description": "The PHP library for use with the FollowerAudit REST API.",
+  "keywords": ["twitter audit","follower audit","twitter account audit","twitter account audit api","audit api"],
+  "license": "GNU V3",
+  "homepage": "https://www.bytesview.com",
+  "authors": [
+    {
+      "name": "Bytesview Analytics",
+      "email": "contact@bytesview.com",
+      "homepage": "https://www.bytesview.com",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "source": "https://github.com/bytesview/followerauditapi-php",
+    "issues": "https://github.com/bytesview/followerauditapi-php/issues"
+  },
+  "repositories": [],
+  "require": {
+    "php": "^7.3 || ^7.4 || ^8.0",
+    "ext-curl": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8 || ^9"
+  },
+  "autoload": {
+    "psr-4": {
+      "FauditApi\\": "src"
+    }
+  }
+}
