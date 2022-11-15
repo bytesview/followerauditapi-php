@@ -76,7 +76,7 @@ class FauditApi extends FauditApiBase {
         if($refresh)
             $data['refresh']    =   $refresh;
 
-        return $this->post($this->newAuditApiURL(),$data,true);
+        return $this->post($this->newAuditApiURL(),$data);
     }
     
     function bulkaudit($username= '',$twitter_id='',$refresh = 0){
@@ -89,7 +89,7 @@ class FauditApi extends FauditApiBase {
         if($refresh)
             $data['refresh']    =   $refresh;
 
-        return $this->post($this->bulkauditApiURL(),$data,true);
+        return $this->post($this->bulkauditApiURL(),$data);
     }
     
     function auditstatus($audit_id){
@@ -97,6 +97,6 @@ class FauditApi extends FauditApiBase {
         if($audit_id != '')
             $data['audit_id']   =   $audit_id;
 
-        return $this->post($this->auditstatusApiURL(),$data,true);
+        return $this->post($this->auditstatusApiURL(),$data);
     }
 }
