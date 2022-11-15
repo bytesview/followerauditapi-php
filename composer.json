@@ -3,7 +3,7 @@
   "type": "library",
   "description": "The PHP library for use with the FollowerAudit REST API.",
   "keywords": ["twitter audit","follower audit","twitter account audit","twitter account audit api","audit api"],
-  "license": "GNU V3",
+  "license": "GNU v3.0",
   "homepage": "https://www.bytesview.com",
   "authors": [
     {
