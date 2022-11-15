@@ -304,7 +304,7 @@ class FauditApiBase {
      */
     protected function newAuditApiURL():string
     {
-        return self::API_HOST.self::API_VERSION.self::API_BASE_PATH.'/newaudit';
+        return self::API_HOST.self::API_BASE_PATH.'/'.self::API_VERSION.'/newaudit';
     }
     
     /**
@@ -313,7 +313,7 @@ class FauditApiBase {
      */
     protected function bulkauditApiURL():string
     {
-        return self::API_HOST.self::API_VERSION.self::API_BASE_PATH.'/bulkaudit';
+        return self::API_HOST.self::API_BASE_PATH.'/'.self::API_VERSION.'/bulkaudit';
     }
     
     /**
@@ -322,6 +322,6 @@ class FauditApiBase {
      */
     protected function auditstatusApiURL():string
     {
-        return self::API_HOST.self::API_VERSION.self::API_BASE_PATH.'/getaudit';
+        return self::API_HOST.self::API_BASE_PATH.'/'.self::API_VERSION.'/getaudit';
     }
 }
